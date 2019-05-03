@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block main %}
+<style>
+    .row img {
+        width: 300px;
+        height: 135px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>WebSocket Chat</h1>
+            <div class="alert alert-danger">请先登录
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> 请登录</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/signin" method="post">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="你的昵称" value="{{ name }}">
+                            <p class="help-block">你的名字</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-hd-video"></span> 图解</h3>
+                </div>
+                <div class="panel-body" style="text-align:center;">
+                    <img src="/static/images/2.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

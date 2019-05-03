@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">海棠</a>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a target="_blank" href="#">青衫薄</a></li>
+                    <li><a target="_blank" href="#">一巷江湖</a></li>
+                    <li><a target="_blank" href="#">别有天</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/signout">退出</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="important" style="color:#000; background-color:pink; padding:30px 0; margin:-20px 0 20px 0;">
+        <div class="container">
+            <h1 style=" font-size:60px">桃花渐暖年岁闲</h1>
+            <p style="font-size:24px; line-height:48px">偏爱夜读的少年，愈笑愈倦，多少愁绪已散做星幕天悬</p>
+        </div>
+    </div>
+    {% block main %} {% endblock %}
+    <footer style="background-color:#ddd; padding: 20px 0;">
+        <div class="container">
+            <p>
+                <a target="_blank" href="#">Website</a> -
+                <a target="_blank" href="#">Website</a> -
+                <a target="_blank" href="#">Website</a>
+            </p>
+            <p>This JavaScript course is created by <a target="_blank" href="#">@Cnyu</a>.</p>
+            <p>Code licensed <a target="_blank" href="#">ChyCnyu</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
