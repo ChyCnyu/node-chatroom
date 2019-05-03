@@ -1,0 +1,2 @@
+# node-chatroom
+采用B/S模型，前端使用bootstrap框架进行布局，后端使用node.js进行http的连接，通过Nginx配置反向代理，HTTP和WebSocket通过反向代理连接Node服务器，因此代理服务器支持WebSocket协议
